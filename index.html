@@ -1,43 +1,65 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nombre del Artista Digital</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VROTO</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="icon" href="favicon.ico" />
+  <meta name="description" content="Artista multidisciplinario con experiencia en arte, tecnología y educación." />
 </head>
-<body>
+<body class="bg-black text-gray-200 font-sans">
+  <!-- Header -->
+  <header class="flex justify-between items-center p-6 border-b border-gray-800 fixed top-0 left-0 w-full bg-black bg-opacity-90 z-50">
+    <div class="text-xl font-bold tracking-widest">VROTO</div>
+    <nav class="flex items-center space-x-6">
+      <a href="https://www.instagram.com/vroto_/" target="_blank" class="hover:text-pink-400 transition">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 3h9a4.5 4.5 0 014.5 4.5v9a4.5 4.5 0 01-4.5 4.5h-9A4.5 4.5 0 013 16.5v-9A4.5 4.5 0 017.5 3z" />
+          <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 7.5h.007v.007H16.5V7.5zM12 8.25a3.75 3.75 0 100 7.5 3.75 3.75 0 000-7.5z" />
+        </svg>
+      </a>
+      <a href="#blog" class="hover:text-blue-400 transition">Blog</a>
+    </nav>
+  </header>
 
-    <header>
-        <h1>Nombre del Artista Digital</h1>
-        <nav>
-            <ul>
-                <li><a href="#portfolio">Portafolio</a></li>
-                <li><a href="#about">Acerca de</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Presentación -->
+  <section class="flex flex-col items-center justify-center text-center px-6" style="min-height: 70vh; margin-top: 100px;">
+    <h1 class="text-5xl font-bold tracking-wide mb-2">VROTO</h1>
+    <p class="text-gray-400 text-lg mb-6">by Luis G. Sánchez</p>
+    <p class="max-w-xl text-gray-300 leading-relaxed">
+        Artista multidisciplinario, con experiencia en las artes, tecnología y educación.<br />
+        Buscando implementar las nuevas tecnologías en el flujo de trabajo de la industria creativa.
+      </p>
+  </section>
 
-    <section id="portfolio">
-        <h2>Portafolio</h2>
-        <!-- Agrega aquí tus proyectos o imágenes -->
-    </section>
+  <!-- Proyectos (placeholder para futuro contenido) -->
+  <section class="px-6 py-20 bg-gray-800 text-center">
+    <h2 class="text-3xl font-semibold mb-10">Proyectos</h2>
+    <p class="text-gray-400">Próximamente...</p>
+  </section>
 
-    <section id="about">
-        <h2>Acerca de</h2>
-        <p>Información sobre el artista digital y su enfoque artístico.</p>
-    </section>
+  <!-- Contacto -->
+  <section class="px-6 py-16 text-center">
+    <h2 class="text-3xl font-semibold mb-6">Contacto</h2>
+    <p class="mb-6 text-gray-400">¿Quieres colaborar o saber más? Escríbeme a:</p>
+    <a href="mailto:un.vato.roto@gmail.com" class="text-xl font-medium text-indigo-400 hover:text-indigo-300 transition">un.vato.roto@gmail.com</a>
 
-    <section id="contact">
-        <h2>Contacto</h2>
-        <p>Formulario de contacto o información de contacto.</p>
-    </section>
+    <div class="flex justify-center space-x-6 mt-10">
+      <a href="https://www.instagram.com/vroto_/" target="_blank" class="text-gray-400 hover:text-white transition">Instagram</a>
+      <a href="https://www.tiktok.com/@unvatoroto" target="_blank" class="text-gray-400 hover:text-white transition">TikTok</a>
+      <a href="https://www.youtube.com/@vroto-art" target="_blank" class="text-gray-400 hover:text-white transition">YouTube</a>
+      <a href="https://github.com/v-roto" target="_blank" class="text-gray-400 hover:text-white transition">GitHub</a>
+    </div>
+  </section>
 
-    <footer>
-        <p>&copy; 2024 Nombre del Artista Digital. Todos los derechos reservados.</p>
-    </footer>
+  <!-- Footer -->
+  <footer class="py-8 text-center text-gray-600 text-sm border-t border-gray-800">
+    © <span id="year"></span> VROTO — Todos los derechos reservados.
+  </footer>
 
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
